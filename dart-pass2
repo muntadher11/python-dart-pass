@@ -1,0 +1,56 @@
+abstract class Animal {
+  void printName();
+  void printSound();
+}
+class Dog extends Animal{
+  @override
+  void printName() {
+    print("Dog");
+  }
+  @override
+  void printSound() {
+    print("ho");
+  }
+}
+class Cat extends Animal{
+  @override
+  void printName() {
+    print("Cat");
+  }
+  @override
+  void printSound() {
+    print("meo");
+  }
+}
+class Cow extends Animal{
+  @override
+  void printName() {
+    print("Cow");
+  }
+  @override
+  void printSound() {
+    print("mooo");
+  }
+}
+
+
+void main(){
+  Dog d=Dog();
+  print("The name :");
+  d.printName();
+  print("The sound :");
+  d.printSound();
+
+  Cat c=Cat();
+  print("The name :");
+  c.printName();
+  print("The sound :");
+  c.printSound();
+
+  Cow co=Cow();
+  print("The name :");
+  co.printName();
+  print("The sound :");
+  co.printSound();
+
+}
